@@ -48,13 +48,22 @@ install -p -m 0644 -D %{name}.vim %{buildroot}%{_datadir}/vim/vimfiles/syntax/%{
 %files
 %license COPYING
 %doc README
+%doc %{_datadir}/doc/colm/
 %{_bindir}/%{name}
+%{_bindir}/colm-wrap
 %{_libdir}/lib%{name}-%{version}.so
+%{_libdir}/libfsm-%{version}.so
 %dir %{_datadir}/vim
 %dir %{_datadir}/vim/vimfiles
 %dir %{_datadir}/vim/vimfiles/syntax
 %{_datadir}/vim/vimfiles/syntax/%{name}.vim
+%{_datadir}/runtests
+%{_datadir}/ril*
+%{_datadir}/rlhc*
 
 %files devel
 %{_libdir}/lib%{name}.so
+%{_libdir}/libfsm.so
 %{_includedir}/%{name}/
+%{_includedir}/aapl/
+%{_includedir}/libfsm/
