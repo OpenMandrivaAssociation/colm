@@ -7,6 +7,7 @@ Summary:        Programming language designed for the analysis of computer langu
 License:        MIT and LGPLv2+
 URL:            https://www.colm.net/open-source/colm/
 Source0:        https://www.colm.net/files/%{name}/%{name}-%{version}.tar.gz
+Patch0:         fix-library.patch
 BuildRequires:  autoconf
 BuildRequires:  automake
 BuildRequires:  libtool
