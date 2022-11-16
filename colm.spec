@@ -44,7 +44,6 @@ autoreconf -vfi
 find %{buildroot}%{_libdir} -type f -name '*.la' -print -delete
 install -p -m 0644 -D %{name}.vim %{buildroot}%{_datadir}/vim/vimfiles/syntax/%{name}.vim
 
-%ldconfig_scriptlets
 
 %files
 %license COPYING
