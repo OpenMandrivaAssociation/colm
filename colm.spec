@@ -47,7 +47,6 @@ install -p -m 0644 -D %{name}.vim %{buildroot}%{_datadir}/vim/vimfiles/syntax/%{
 
 %files
 %license COPYING
-%doc README
 %doc %{_datadir}/doc/colm/
 %{_bindir}/%{name}
 %{_bindir}/colm-wrap
