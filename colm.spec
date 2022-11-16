@@ -47,7 +47,7 @@ install -p -m 0644 -D %{name}.vim %{buildroot}%{_datadir}/vim/vimfiles/syntax/%{
 
 %files
 %license COPYING
-%doc ChangeLog README
+%doc README
 %{_bindir}/%{name}
 %{_libdir}/lib%{name}-%{version}.so
 %dir %{_datadir}/vim
